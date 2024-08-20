@@ -26,9 +26,9 @@ app.get('/api/hello', function (req, res) {
 
 app.get('/api/whoami', (req, res) =>{
   const ipadress = req.ip
-  const lenguage = req.headers['accept-language']
+  const language = req.headers['accept-language']
   const software = req.headers['user-agent']
-  res.json({ipadress: ipadress, lenguage: lenguage, software: software})
+  res.json({ipadress: ipadress, language: language, software: software})
 })
 
 // listen for requests :)
