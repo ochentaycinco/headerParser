@@ -28,7 +28,7 @@ app.get('/api/whoami', (req, res) =>{
   const ipaddress = req.ip || req.headers['x-forwarded-for']
   const language = req.headers['accept-language']
   const software = req.headers['user-agent']
-  res.json({ipadress: ipaddress, language: language, software: software})
+  res.json({ipaddress: ipaddress, language: language, software: software})
 })
 
 // listen for requests :)
